@@ -12,4 +12,5 @@ inputs:
 - name: pipeline-templates
 
 run:
-  path: ls \pipeline-templates
+  path: ls
+  args"[pipeline-templates]
