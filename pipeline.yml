@@ -1,5 +1,11 @@
 ---
 resources:
+- name: pipeline-templates
+  type: git
+  source:
+    uri: https://github.com/mariuszdotnet/vmstamp-pipeline.git
+    branch: master
+
 - name: terraform-templates
   type: git
   source:
@@ -11,14 +17,6 @@ jobs:
   public: true
   plan:
   - get: terraform-templates
+  - get: pipeline-templates
   - task: tf-container
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source: 
-          repository: hashicorp/terraform
-          tag: light
-      run:
-        path: terraform
-        args: [-v]
+    file: vmstamp-pipeline/task_tf_container.yml
