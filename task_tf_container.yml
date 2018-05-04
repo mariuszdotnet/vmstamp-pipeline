@@ -6,6 +6,10 @@ image_resource:
   source: 
     repository: hashicorp/terraform
     tag: light
+
+inputs:
+- name: terraform-templates
+- name: pipeline-templates
+
 run:
-  path: terraform
-  args: [-v]
+ path: pipeline-templates/terraform-init-plan-apply.sh
