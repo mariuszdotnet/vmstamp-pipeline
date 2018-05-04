@@ -13,4 +13,5 @@ inputs:
 
 run:
   path: cat
-  arg: [pipeline-templates/terraform-init-plan-apply.sh]
+  args: 
+  - pipeline-templates/terraform-init-plan-apply.sh
