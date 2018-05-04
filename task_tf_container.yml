@@ -12,5 +12,4 @@ inputs:
 - name: pipeline-templates
 
 run:
-  path: ls
-  args: [-alR]
+  path: ./pipeline-templates/terraform-init-plan-apply.sh
