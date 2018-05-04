@@ -2,4 +2,4 @@
 set -o errexit
 set -o xtrace
 
-terraform init
+terraform -v
