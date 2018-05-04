@@ -19,4 +19,4 @@ jobs:
   - get: terraform-templates
   - get: pipeline-templates
   - task: tf-container
-    file: vmstamp-pipeline/task_tf_container.yml
+    file: pipeline-templates/task_tf_container.yml
