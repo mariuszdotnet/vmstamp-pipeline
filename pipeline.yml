@@ -1,0 +1,24 @@
+---
+resources:
+- name: terraform-templates
+  type: git
+  source:
+    uri: https://github.com/mariuszdotnet/terraform.git
+    branch: master
+
+jobs:
+- name: win-vm-stamp
+  public: true
+  plan:
+  - get: terraform-templates
+  - task: tf-container
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          repository: hashicorp/terraform
+          tag: light
+      run:
+        path: terraform
+        args: [-v]
