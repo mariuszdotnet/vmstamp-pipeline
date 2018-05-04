@@ -13,4 +13,4 @@ inputs:
 
 run:
   path: ls
-  args"[pipeline-templates]
+  args: [pipeline-templates]
