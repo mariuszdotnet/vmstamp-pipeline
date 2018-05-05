@@ -1,3 +1,4 @@
 #!/bin/sh
 
-terraform init
+cd terraform-templates/workspaces/terraform-winvm
+ls
