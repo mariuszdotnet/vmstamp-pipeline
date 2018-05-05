@@ -1,6 +1,6 @@
 #!/bin/sh
-
-ls -al
+cd terraform-secrets
+ls
 #cd terraform-templates/workspaces/terraform-winvm
 #terraform init
 #mv ./terraform-job/terraform.tfvars ./terraform-templates/workspaces/terraform-winvm
