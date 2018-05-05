@@ -12,11 +12,18 @@ resources:
     uri: https://github.com/mariuszdotnet/terraform.git
     branch: master
 
+- name: terraform-job
+  type: git
+  source:
+    uri: https://github.com/mariuszdotnet/terraform-job
+    branch: master
+
 jobs:
 - name: win-vm-stamp
   public: true
   plan:
   - get: terraform-templates
   - get: pipeline-templates
+  - get: terraform-job
   - task: tf-container
     file: pipeline-templates/task_tf_container.yml
