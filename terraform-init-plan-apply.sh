@@ -1,5 +1,3 @@
-#!/bin/bash
-set -o errexit
-set -o xtrace
+#!/bin/sh
 
 echo "Hello Wolld!"
