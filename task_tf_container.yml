@@ -10,6 +10,8 @@ image_resource:
 inputs:
 - name: terraform-templates
 - name: pipeline-templates
+- name: terraform-secrets
+- name: terraform-job
 
 run:
   path: ./pipeline-templates/terraform-init-plan-apply.sh
