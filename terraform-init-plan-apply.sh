@@ -4,3 +4,5 @@ cp terraform-job/terraform.tfvars terraform-templates/workspaces/terraform-winvm
 cp terraform-secrets/secrets.tfvars terraform-templates/workspaces/terraform-winvm/secrets.tfvars
 cd terraform-templates/workspaces/terraform-winvm
 ls -al
+terraform init
+terraform plan
