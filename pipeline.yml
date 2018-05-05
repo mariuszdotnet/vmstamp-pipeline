@@ -11,11 +11,20 @@ resources:
   source:
     uri: https://github.com/mariuszdotnet/terraform.git
     branch: master
+    username:
+    password: ktlhsznh5uwtdg5feswqt33ruevehhukrhm66g2ryg6tma6j7vq
+    
 
 - name: terraform-job
   type: git
   source:
     uri: https://github.com/mariuszdotnet/terraform-job
+    branch: master
+
+- name: terraform-secrets
+  type: git
+  source:
+    uri: https://supermarioworld.visualstudio.com/_git/terraform-config
     branch: master
 
 jobs:
@@ -25,5 +34,6 @@ jobs:
   - get: terraform-templates
   - get: pipeline-templates
   - get: terraform-job
+  - get: terraform-secrets
   - task: tf-container
     file: pipeline-templates/task_tf_container.yml
