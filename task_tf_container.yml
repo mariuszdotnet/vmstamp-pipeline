@@ -13,5 +13,8 @@ inputs:
 - name: terraform-secrets
 - name: terraform-job
 
+outputs:
+- name: target
+
 run:
   path: ./pipeline-templates/terraform-init-plan-apply.sh
