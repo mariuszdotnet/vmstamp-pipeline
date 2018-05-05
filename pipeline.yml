@@ -10,10 +10,7 @@ resources:
   type: git
   source:
     uri: https://github.com/mariuszdotnet/terraform.git
-    branch: master
-    username:
-    password: ktlhsznh5uwtdg5feswqt33ruevehhukrhm66g2ryg6tma6j7vq
-    
+    branch: master  
 
 - name: terraform-job
   type: git
@@ -26,6 +23,8 @@ resources:
   source:
     uri: https://supermarioworld.visualstudio.com/_git/terraform-config
     branch: master
+    username:
+    password: ktlhsznh5uwtdg5feswqt33ruevehhukrhm66g2ryg6tma6j7vq
 
 jobs:
 - name: win-vm-stamp
