@@ -11,7 +11,7 @@ inputs:
 - name: terraform-templates
 - name: pipeline-templates
 - name: terraform-secrets
-- name: terraform-job
+- name: terraform-trigger-job
 
 outputs:
 - name: target
